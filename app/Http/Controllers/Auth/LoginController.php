@@ -59,6 +59,7 @@ class LoginController extends FrontBaseController
     public function showLoginForm()
     {
         if (!$this->isLegal()) {
+            // CRISTOBAL
            // return redirect('verify-purchase');
         }
 

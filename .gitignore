@@ -14,7 +14,6 @@ yarn-error.log
 yarn.lock
 .phpunit.result.cache
 /public/mix-manifest.json
-/public/user-uploads
 .DS_Store
 /storage/legal
 /storage/installed
