@@ -59,7 +59,7 @@ class LoginController extends FrontBaseController
     public function showLoginForm()
     {
         if (!$this->isLegal()) {
-            return redirect('verify-purchase');
+           // return redirect('verify-purchase');
         }
 
         if (!session()->has('errors')) {
