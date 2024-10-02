@@ -1,0 +1,103 @@
+.rtl{
+    direction: rtl;
+    text-align: right;
+}
+.rtl .main-sidebar{
+    left: auto;
+}
+.rtl .content-wrapper, .rtl .main-footer, .rtl .main-header{
+    margin-left: 0px;
+    margin-right: 120px;
+}
+.rtl .nav{
+    padding-right: 0px;
+}
+.rtl .visit_store i{
+    padding-left: 8px;
+}
+.rtl div.dataTables_wrapper div.dataTables_filter {
+    text-align: left;
+}
+.rtl div.dataTables_wrapper div.dataTables_filter input {
+    margin-left: 0em;
+    margin-right: 0.5em;
+}
+.rtl .float-right{
+    float: left !important;
+}
+.rtl .mr-2, .rtl .mx-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0px !important;
+}
+.rtl .text-right {
+    text-align: left !important;
+}
+.rtl .select2-container--default .select2-selection--single .select2-selection__arrow{
+    left: 1px;
+}
+.rtl .fc-toolbar .fc-left {
+    float: right;
+}
+.rtl .fc-toolbar .fc-right, .rtl .pull-right {
+    float: left;
+}
+.rtl .modal-header .close, .rtl .modal-header .mailbox-attachment-close{
+    margin: -1rem -1rem -1rem -1rem;
+}
+.rtl .modal-footer > :not(:last-child) {
+    margin-left: .25rem;
+}
+.rtl .dropdown-menu-right {
+    left: 0;
+    right: auto;
+}
+.rtl .dropdown-menu {
+    text-align: right;
+}
+.rtl .chart_menu {
+    margin-left: 0;
+    padding-right: 0px;
+}
+.rtl.sidebar-collapse .main-sidebar, .rtl.sidebar-collapse .main-sidebar:before {
+    margin-right: -120px;
+}
+.rtl .navbar-nav{
+    padding-right: 0px;
+}
+.rtl .ml-3, .rtl .mx-3 {
+    margin-left: auto !important;
+    margin-right: 1rem !important;
+}
+.rtl .main-sidebar, .rtl .main-sidebar:before {
+    -webkit-transition: margin-right 0.3s ease-in-out, width 0.3s ease-in-out;
+    transition: margin-right 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+.rtl .handle{
+    right: 5px;
+    left: auto;
+}
+.rtl .todo{
+    padding-right: 30px;
+    padding-left: 0px;
+}
+
+@media only screen and (max-width: 991.98px){
+    .rtl .main-sidebar, .rtl .main-sidebar:before {
+        margin-right: -120px;
+        margin-left: auto;
+    }
+    .rtl .content-wrapper, .rtl .content-wrapper:before, .rtl .main-footer, .main-footer:before, .rtl .main-header, .rtl .main-header:before {
+        margin-right: 0;
+    }
+    .rtl.sidebar-open .main-sidebar, .rtl.sidebar-open .main-sidebar:before {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .rtl .visit_store {
+        float: right;
+    }
+    .rtl .lang-user-drop {
+        float: left;
+    }
+}

@@ -1,0 +1,28 @@
+<?php
+
+return array (
+  'billing' => 'Facturación',
+  'bookings' => 'Reservaciones',
+  'calendar' => 'Calendario',
+  'categories' => 'Categorias',
+  'companies' => 'Compañias',
+  'configuration' => 'Configuración',
+  'coupon' => 'Cupon',
+  'coupons' => 'Cupones',
+  'currency' => 'Moneda',
+  'customers' => 'Clientes',
+  'dashboard' => 'Escritorio',
+  'deal' => 'Oferta',
+  'deals' => 'Ofertas',
+  'employee' => 'Empleado',
+  'invoices' => 'Facturas',
+  'language' => 'Idioma',
+  'products' => 'Productos',
+  'profile' => 'Perfil',
+  'reports' => 'Reporte',
+  'services' => 'Servicios',
+  'bookingSettings' => 'Ajustes de Reservaciones',
+  'todoList' => 'Lista de Tareas',
+  'earningReport' => 'Reporte de Ganancias',
+  'salesReport' => 'Reporte de Ventas',
+);
