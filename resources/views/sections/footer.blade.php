@@ -59,7 +59,7 @@
                 </div>
                 -->
                 <div class="col-md-12">
-                    <p class="mb-0" style="text-align:center">{{ $footer_setting->footer_text }}</p>
+                    <p class="mb-0" style="text-align:center">ME {{ $footer_setting->footer_text }}</p>
                 </div>
             </div>
         </div>
