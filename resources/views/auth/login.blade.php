@@ -16,7 +16,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 booking_step_heading text-center">
-                    <h1>@lang('app.welcomeTo') <span>{{$frontThemeSettings->title }}</span> !</h1>
+                    <!-- CRISTOBAL -->
+                <!--    <h1>@lang('app.welcomeTo') <span>{{$frontThemeSettings->title }}</span> !</h1> -->
+                    <h1>Bienvenido a <span>{{$frontThemeSettings->title }}</span> !</h1>
                 </div>
                 <div class="form_wrapper mx-auto position-relative">
                     <form action="{{ route('login') }}" method="post">
@@ -45,9 +47,13 @@
                         <div class="remember_box mt-3 d-flex justify-content-between">
                             <input name="remember" id="remember" {{ old('remember') ? 'checked' : '' }} type="checkbox">
                             <label for="remember" class="mb-3">
-                                <span></span>@lang('app.rememberMe')
+                                <!-- CRISTOBAL -->
+                                <!-- <span></span>@lang('app.rememberMe') -->
+                                <span></span>Recordarme
                             </label>
-                            <a href="{{ route('password.request') }}">@lang('app.forgotPassword')</a>
+                            <!-- CRISTOBAL -->
+                            <!-- <a href="{{ route('password.request') }}">@lang('app.forgotPassword')</a> -->
+                            <a href="{{ route('password.request') }}">Olvide mi contraseña</a> 
                         </div>
 
                         @if ($googleCaptchaSettings->login_page == 'active' && $googleCaptchaSettings->status == 'active')
@@ -63,8 +69,10 @@
                                 <strong>{{ $errors->first('recaptcha') }}</strong>
                             </span>
                         @endif
+                        <!-- CRISTOBAL -->
+                        <!-- <button type="submit" class="btn btn-dark mx-auto d-block mt-4">@lang('app.signIn')</button> -->
+                        <button type="submit" class="btn btn-dark mx-auto d-block mt-4">Iniciar</button>
 
-                        <button type="submit" class="btn btn-dark mx-auto d-block mt-4">@lang('app.signIn')</button>
                     </form>
 
                     <!-- /.social-auth-links -->

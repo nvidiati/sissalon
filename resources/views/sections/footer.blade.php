@@ -1,5 +1,7 @@
 <!-- FOOTER START -->
 <footer>
+    <!-- CRISTOBAL -->
+    <!--
     <div class="footer_top">
         <div class="container">
             <div class="row">
@@ -44,16 +46,20 @@
             </div>
         </div>
     </div>
+    -->
     <div class="footer_bottom ml-auto">
         <div class="container">
             <div class="row">
+                <!-- CRISTOBAL -->
+                <!--
                 <div class="col-md-6 d-md-flex align-items-center d-none d-sm-block">
                     <h3 class="mb-0">@lang('front.headings.payment') @lang('app.option') :</h3>
                     <a>@lang('app.stripe')</a>
                     <a>@lang('app.razorpay')</a>
                 </div>
-                <div class="col-md-6">
-                    <p class="mb-0">{{ $footer_setting->footer_text }}</p>
+                -->
+                <div class="col-md-12">
+                    <p class="mb-0" style="text-align:center">{{ $footer_setting->footer_text }}</p>
                 </div>
             </div>
         </div>

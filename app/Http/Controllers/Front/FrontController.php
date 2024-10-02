@@ -263,8 +263,9 @@ class FrontController extends FrontBaseController
 
         $this->coupons = $data;
         $this->googleMapAPIKey = $this->settings;
-
-        return view('front.index', $this->data);
+    // CRISTOBAL DESACTIVAR PAGINA INICIO
+    //    return view('front.index', $this->data);
+        return redirect('login');
     }
 
     public function matchLocations(Request $request)

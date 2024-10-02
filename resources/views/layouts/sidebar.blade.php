@@ -279,7 +279,7 @@
             </li>
         @endif
 
-        <!--
+        
         @if (Auth::user()->roles()->withoutGlobalScopes()->latest()->first()->hasPermission(['read_ticket','create_ticket', 'update_ticket', 'delete_ticket']) && !\Session::get('loginRole'))
         <li class="nav-item">
             <a href="{{ Auth::user()->is_superadmin_employee ? route('superadmin.tickets.index') : route('admin.tickets.index') }}" class="nav-link {{ (request()->is('super-admin/ticket*') || request()->is('account/ticket*')) ? 'active' : '' }}">
@@ -290,7 +290,7 @@
             </a>
         </li>
         @endif
--->
+
         <li class="nav-item">
             @if (Auth::user()->is_superadmin_employee)
                 <a href="{{ route('superadmin.settings.index') }}#profile_page" class="nav-link {{ request()->is('super-admin/settings*') ? 'active' : '' }} {{ request()->is('super-admin/front-settings*') ? 'active' : '' }}">

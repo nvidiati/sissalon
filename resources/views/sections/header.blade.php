@@ -68,6 +68,8 @@
 </style>
 
 <!-- HEADER START -->
+ <!-- CRISTOBAL -->
+ <!--
 <header>
     <div class="newHeader">
 
@@ -190,7 +192,9 @@
 
         <div class="headerBottom">
             <div class="container">
+-->
                 <!-- DESKTOP NAVBAR START -->
+<!--                 
                 <nav class="d-none d-md-block py-0 navbar navbar-expand-lg">
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav categories_main_menu mr-auto">
@@ -235,9 +239,10 @@
                         </ul>
                     </div>
                 </nav>
+-->
                 <!-- DESKTOP NAVBAR END -->
-
                 <!-- MOBILE NAVBAR START -->
+<!--
                 <div class="d-block d-md-block d-lg-none mobile_navbar position-relative" id="header">
                     <div id="mySidenav" class="sidenav ">
                         <a href="javascript:void(0)" class="closebtn close-nav"><i
@@ -273,14 +278,16 @@
                     </div>
 
                 </div>
+-->
                 <!-- MOBILE NAVBAR END -->
-
+<!--
             </div>
         </div>
 
     @endif
 
 </header>
+-->
 <!-- HEADER END -->
 
 @push('footer-script')

@@ -8913,6 +8913,8 @@ input[type=button].btn-block {
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 0);
   border-top-right-radius: calc(0.25rem - 0);
+  /* CRISTOBAL */
+  object-fit: cover;
 }
 
 .card-img,
