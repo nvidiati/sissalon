@@ -258,6 +258,7 @@
                                 <tbody>
                                     <tr id="no-service">
                                         <td colspan="5" class="text-center text-danger">@lang("messages.addService")</td>
+                                        <td colspan="5" class="text-center text-danger">@lang("messages.addService")</td>
                                     </tr>
                                 </tbody>
                             </table>
