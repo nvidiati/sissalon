@@ -248,9 +248,10 @@
                             <table class="table table-condensed" id="cart-table">
                                 <thead>
                                     <tr>
-                                        <th colspan="2" width="30%">@lang('app.service')</th>
-                                        <th width="20%">@lang('app.price')</th>
-                                        <th width="23%">@lang('app.quantity')</th>
+                                        <th width="22%">@lang('app.service')</th>
+                                        <th width="1%"></th>
+                                        <th width="18%">@lang('app.price')</th>
+                                        <th width="28%">@lang('app.quantity')</th>
                                         <th class="text-right">@lang('app.subTotal')</th>
                                         <th></th>
                                     </tr>
@@ -267,8 +268,9 @@
                             <table class="table table-condensed" id="product-table">
                                 <thead>
                                     <tr>
-                                        <th colspan="2" width="30%">@lang('app.product')</th>
-                                        <th width="20%">@lang('app.price')</th>
+                                        <th width="22%">@lang('app.product')</th>
+                                        <th width="1%"></th>
+                                        <th width="18%">@lang('app.price')</th>
                                         <th width="28%">@lang('app.quantity')</th>
                                         <th class="text-right">@lang('app.subTotal')</th>
                                         <th></th>
@@ -869,7 +871,7 @@
                     '</tr>\n' +
                     '<tr class="employee-row" id="employee_list" data-service-id="' + serviceId + '">\n' +
                     '    <td style="border-top: 0;">&nbsp;</td>\n' +
-                    '    <td style="border-top: 0; padding: 0 1px;"><label>Empleado:</label></td>\n' +
+                    '    <td style="border-top: 0; padding: 5px 2px 0 0;"><label>Empleado:</label></td>\n' +
                     '    <td style="border-top: 0; padding: 0 1px;" colspan="3">\n' +
                     '        <select id="employee" name="employee[]" class="form-control select2">\n' +
                      employeeOptions + 
