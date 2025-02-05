@@ -862,7 +862,15 @@
                     '                                      data-original-title="@lang('app.delete')"><i class="fa fa-times"\n' +
                     '                                                                                                   aria-hidden="true"></i></a>\n' +
                     '                                </td>\n' +
-                    '                            </tr>';
+                    '</tr>\n' +
+                    '<tr class="employee-row" data-service-id="' + serviceId + '">\n' +
+                    '    <td colspan="6">\n' +
+                    '        <label>Asignar Empleado:</label>\n' +
+                    '        <select name="cart_employee[]" class="form-control select-employee" data-service-id="' + serviceId + '">\n' +
+                    '            <option value="">Seleccionar</option>\n' +
+                    '        </select>\n' +
+                    '    </td>\n' +
+                    '</tr>';
 
                 if ($("#cart-table tbody").has('tr#no-service')) {
                     $("#cart-table tbody tr#no-service").remove();
