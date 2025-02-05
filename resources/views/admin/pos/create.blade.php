@@ -867,13 +867,11 @@
                     '    <td colspan="6">\n' +
                     '        <label>Asignar Empleado:</label>\n' +
                     '        <select id="employee" name="employee[]" class="form-control select2" multiple="multiple">\n' +
-                                        @foreach($employees as $employee)
-                                            <option value="{{ $employee->id }}">{{ ucwords($employee->name) }}</option>
-                                        @endforeach +
+                    '            <option value="">Seleccionar</option>\n' +
                     '        </select>\n' +
                     '<div id="employee-error" class="invalid-feedback"></div>' +
                     '    </td>\n' +
-                    '</tr>'; 
+                    '</tr>';
 
                 if ($("#cart-table tbody").has('tr#no-service')) {
                     $("#cart-table tbody tr#no-service").remove();
