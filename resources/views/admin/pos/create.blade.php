@@ -843,6 +843,10 @@
             }
 
             if(isAdded === false && serviceId !== undefined){
+                let employeeOptions = `@foreach($employees as $employee)
+                    <option value="{{ $employee->id }}">{{ ucwords($employee->name) }}</option>
+                @endforeach`;
+
                 let cartRow =  '<tr>\n' +
                     '                                <td><input type="hidden" name="cart_services[]" value="'+serviceId+'">'+serviceName+'</td>\n' +
                     '                                <td><input type="hidden" name="tax_percent[]" value="'+taxPercent+'"></td>\n' +
@@ -868,6 +872,7 @@
                     '        <label>Asignar Empleado:</label>\n' +
                     '        <select id="employee" name="employee[]" class="form-control select2" multiple="multiple">\n' +
                     '            <option value="">Seleccionar</option>\n' +
+                     employeeOptions + 
                     '        </select>\n' +
                     '<div id="employee-error" class="invalid-feedback"></div>' +
                     '    </td>\n' +
