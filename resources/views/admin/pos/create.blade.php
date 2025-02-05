@@ -269,7 +269,7 @@
                                     <tr>
                                         <th colspan="2" width="30%">@lang('app.product')</th>
                                         <th width="20%">@lang('app.price')</th>
-                                        <th width="23%">@lang('app.quantity')</th>
+                                        <th width="28%">@lang('app.quantity')</th>
                                         <th class="text-right">@lang('app.subTotal')</th>
                                         <th></th>
                                     </tr>
@@ -868,9 +868,9 @@
                     '                                </td>\n' +
                     '</tr>\n' +
                     '<tr class="employee-row" id="employee_list" data-service-id="' + serviceId + '">\n' +
-                    '    <td>&nbsp;</td>\n' +
-                    '    <td><label>Empleado:</label></td>\n' +
-                    '    <td colspan="3">\n' +
+                    '    <td style="border-top: 0;">&nbsp;</td>\n' +
+                    '    <td style="border-top: 0; padding: 0 1px;"><label>Empleado:</label></td>\n' +
+                    '    <td style="border-top: 0; padding: 0 1px;" colspan="3">\n' +
                     '        <select id="employee" name="employee[]" class="form-control select2">\n' +
                      employeeOptions + 
                     '        </select>\n' +
