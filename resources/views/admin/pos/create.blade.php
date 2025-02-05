@@ -863,17 +863,14 @@
                     '                                                                                                   aria-hidden="true"></i></a>\n' +
                     '                                </td>\n' +
                     '</tr>\n' +
-                    '<div class="col-md-10" id="employee_list">' +
-                    '            <div class="form-group">' +
-                    '                <label for="">@lang('modules.booking.assignEmployee')</label>' +
-                    '                <select id="employee" name="employee[]" class="form-control select2" multiple="multiple">' +
-                    '                    @foreach($employees as $employee)' +
-                    '                        <option value="{{ $employee->id }}">{{ ucwords($employee->name) }}</option>' +
-                    '                    @endforeach' +
-                    '                </select>' +
-                    '                <div id="employee-error" class="invalid-feedback"></div>' +
-                    '            </div>' +
-                    '        </div>' +
+                    '<tr class="employee-row" id="employee_list" data-service-id="' + serviceId + '">\n' +
+                    '    <td colspan="6">\n' +
+                    '        <label>Asignar Empleado:</label>' +
+                    '        <select id="employee" name="employee[]" class="form-control select2" multiple="multiple">\n' +
+                    '            <option value="">Seleccionar</option>\n' +
+                    '        </select>\n' +
+                    '<div id="employee-error" class="invalid-feedback"></div>' +
+                    '    </td>\n' +
                     '</tr>';
 
                 if ($("#cart-table tbody").has('tr#no-service')) {
