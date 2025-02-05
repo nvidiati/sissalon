@@ -219,7 +219,7 @@
                                 <button class="btn btn-success btn-rounded" id="select-customer" type="button"><i
                                             class="fa fa-plus"></i> @lang('app.add')</button>
                             </div>
-
+<!-- CRISTOBAL
                             <div class="col-md-10" id="employee_list">
                                 <div class="form-group">
                                     <label for="">@lang('modules.booking.assignEmployee')</label>
@@ -239,7 +239,7 @@
                                     data-html="true" title="@lang('modules.booking.followingEmployeesAreAvailable') :"
                                     data-content=""></span>
                             </div>
-
+-->
                             <div class="col-md-12 mt-2 mb-2 p-2" id="pos-customer-details"></div>
 
                         </div>
@@ -863,13 +863,17 @@
                     '                                                                                                   aria-hidden="true"></i></a>\n' +
                     '                                </td>\n' +
                     '</tr>\n' +
-                    '<tr class="employee-row" data-service-id="' + serviceId + '">\n' +
-                    '    <td colspan="6">\n' +
-                    '        <label>Asignar Empleado:</label>\n' +
-                    '        <select name="cart_employee[]" class="form-control select-employee" data-service-id="' + serviceId + '">\n' +
-                    '            <option value="">Seleccionar</option>\n' +
-                    '        </select>\n' +
-                    '    </td>\n' +
+                    '<div class="col-md-10" id="employee_list">' +
+                    '            <div class="form-group">' +
+                    '                <label for="">@lang('modules.booking.assignEmployee')</label>' +
+                    '                <select id="employee" name="employee[]" class="form-control select2" multiple="multiple">' +
+                    '                    @foreach($employees as $employee)' +
+                    '                        <option value="{{ $employee->id }}">{{ ucwords($employee->name) }}</option>' +
+                    '                    @endforeach' +
+                    '                </select>' +
+                    '                <div id="employee-error" class="invalid-feedback"></div>' +
+                    '            </div>' +
+                    '        </div>' +
                     '</tr>';
 
                 if ($("#cart-table tbody").has('tr#no-service')) {
