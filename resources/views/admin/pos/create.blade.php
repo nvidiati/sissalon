@@ -873,7 +873,7 @@
                     '        </select>\n' +
                     '<div id="employee-error" class="invalid-feedback"></div>' +
                     '    </td>\n' +
-                    '</tr>';
+                    '</tr>'; 
 
                 if ($("#cart-table tbody").has('tr#no-service')) {
                     $("#cart-table tbody tr#no-service").remove();
