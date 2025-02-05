@@ -868,8 +868,9 @@
                     '                                </td>\n' +
                     '</tr>\n' +
                     '<tr class="employee-row" id="employee_list" data-service-id="' + serviceId + '">\n' +
+                    '    <td>&nbsp;</td>\n' +
                     '    <td><label>Empleado:</label></td>\n' +
-                    '    <td>\n' +
+                    '    <td colspan="3">\n' +
                     '        <select id="employee" name="employee[]" class="form-control select2">\n' +
                      employeeOptions + 
                     '        </select>\n' +
