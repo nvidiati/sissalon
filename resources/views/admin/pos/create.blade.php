@@ -865,9 +865,11 @@
                     '</tr>\n' +
                     '<tr class="employee-row" id="employee_list" data-service-id="' + serviceId + '">\n' +
                     '    <td colspan="6">\n' +
-                    '        <label>Asignar Empleado:</label>' +
+                    '        <label>Asignar Empleado:</label>\n' +
                     '        <select id="employee" name="employee[]" class="form-control select2" multiple="multiple">\n' +
-                    '            <option value="">Seleccionar</option>\n' +
+                                        @foreach($employees as $employee)
+                                            <option value="{{ $employee->id }}">{{ ucwords($employee->name) }}</option>
+                                        @endforeach +
                     '        </select>\n' +
                     '<div id="employee-error" class="invalid-feedback"></div>' +
                     '    </td>\n' +
