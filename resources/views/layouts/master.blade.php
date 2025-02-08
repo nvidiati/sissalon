@@ -67,7 +67,9 @@
             <div class="d-flex align-items-center visit_store">
                 <a class="hidden-sm hidden-xs d-flex" href="{{ route('front.index') }}" target="_blank">
                 <i class="fa fa-desktop"></i>
-                <span class="d-none d-lg-block">@lang('app.visitStore')</span>
+                <!-- CRISTOBAL -->
+            <!--    <span class="d-none d-lg-block">@lang('app.visitStore')</span> -->
+                <span class="d-none d-lg-block"></span>
                 </a>
             </div>
 
@@ -110,6 +112,8 @@
                     @endif
                 @endif
 
+                <!-- CRISTOBAL -->
+                 <!--
                 <li class="dropdown d-flex justify-content-center align-items-center">
                     <select class="form-control language-switcher">
                         @forelse($languages as $language)
@@ -123,7 +127,7 @@
                         @endforelse
                     </select>
                 </li>
-
+                -->
                 <li class="profile-dropdown">
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         {{ csrf_field() }}
