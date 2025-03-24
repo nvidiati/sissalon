@@ -1042,7 +1042,6 @@
 
         $('#cart-table').on('click', '.delete-cart-row', function () {
             $(this).closest('tr').remove();
-            $('.employee-row').remove(); //Haciendo pruebas con esto
             let serviceId = $(this).data('service-id');
             calculateTotal();
             if ($("#cart-table tbody tr").length == 0) {
@@ -1090,6 +1089,7 @@
                 if (willDelete) {
                     $("input[name='cart_prices[]']").each(function( index ) {
                         $(this).closest('tr').remove();
+                        $('.employee-row').remove(); //Haciendo pruebas con esto
                     });
                     calculateTotal();
                     if ($("#cart-table tbody tr").length == 0) {
@@ -1101,6 +1101,7 @@
 
                     $("input[name='product_cart_prices[]']").each(function( index ) {
                         $(this).closest('tr').remove();
+                        $('.employee-row').remove(); //Haciendo pruebas con esto
                     });
                     calculateProductTotal();
                     if ($("#product-table tbody tr").length == 0) {
