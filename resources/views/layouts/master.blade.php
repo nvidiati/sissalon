@@ -113,7 +113,7 @@
                 @endif
 
                 <!-- CRISTOBAL -->
-                 <!--
+                 
                 <li class="dropdown d-flex justify-content-center align-items-center">
                     <select class="form-control language-switcher">
                         @forelse($languages as $language)
@@ -127,7 +127,7 @@
                         @endforelse
                     </select>
                 </li>
-                -->
+                
                 <li class="profile-dropdown">
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                         {{ csrf_field() }}
