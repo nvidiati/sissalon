@@ -1081,10 +1081,11 @@
         $('body').on('click', '#empty-cart', function() {
             swal({
                 icon: "warning",
-                buttons: ["@lang('app.cancel')", "@lang('app.ok')--"],
+                buttons: ["@lang('app.cancel')", "@lang('app.ok')"],
                 dangerMode: true,
                 title: "@lang('errors.areYouSure')",
-                text: "@lang('errors.deleteWarning')",
+                text: "Texto para comprobar",
+               // text: "@lang('errors.deleteWarning')",
             }).then((willDelete) => {
                 if (willDelete) {
                     $("input[name='cart_prices[]']").each(function( index ) {
