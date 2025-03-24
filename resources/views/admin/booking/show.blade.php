@@ -21,6 +21,7 @@
                     <div class="col-md-12 text-right mt-2 mb-2">
                         @if ($user->roles()->withoutGlobalScopes()->latest()->first()->hasPermission('update_booking') && $user->roles()->withoutGlobalScopes()->first()->name != 'customer' && $current_emp_role->name != 'customer' && $booking->status !== 'completed')
                         <a href="{{ route('admin.bookings.edit', $booking->id) }}" class="btn btn-sm btn-outline-primary edit-booking" data-booking-id="{{ $booking->id }}" type="button"><i class="fa fa-edit"></i> @lang('app.edit')</a>
+                        <a href="{{ route('admin.bookings.edit', $booking->id) }}" class="btn btn-sm btn-outline-primary edit-booking" data-booking-id="{{ $booking->id }}" type="button"><i class="fa fa-edit"></i> @lang('app.edit')</a>
                         @endif
                         @if ($user->roles()->withoutGlobalScopes()->latest()->first()->hasPermission('delete_booking') && $current_emp_role->name != 'customer' && $booking->payment_status != 'completed')
                         <button class="btn btn-sm btn-outline-danger delete-row" data-row-id="{{ $booking->id }}" type="button"><i class="fa fa-times"></i> @lang('app.delete') @lang('app.booking')</button>
