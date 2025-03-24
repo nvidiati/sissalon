@@ -1081,7 +1081,7 @@
         $('body').on('click', '#empty-cart', function() {
             swal({
                 icon: "warning",
-                buttons: ["@lang('app.cancel')", "@lang('app.ok')"],
+                buttons: ["@lang('app.cancel')", "@lang('app.ok')--"],
                 dangerMode: true,
                 title: "@lang('errors.areYouSure')",
                 text: "@lang('errors.deleteWarning')",
