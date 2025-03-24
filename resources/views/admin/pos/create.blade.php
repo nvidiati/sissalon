@@ -1041,6 +1041,7 @@
         }
 
         $('#cart-table').on('click', '.delete-cart-row', function () {
+            $(this).closest('tr').next('tr').remove(); //borrar el empleado seleccionado
             $(this).closest('tr').remove();
             let serviceId = $(this).data('service-id');
             calculateTotal();
@@ -1088,7 +1089,7 @@
             }).then((willDelete) => {
                 if (willDelete) {
                     $("input[name='cart_prices[]']").each(function( index ) {
-                        $(this).closest('tr').next('tr').remove(); //Haciendo pruebas con esto
+                        $(this).closest('tr').next('tr').remove(); //borrar el empleado seleccionado
                         $(this).closest('tr').remove();
                         
                     });
