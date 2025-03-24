@@ -226,6 +226,9 @@ class BookingController extends AdminBaseController
                     $action .= ' <a href="'.route('admin.bookings.show', [$row->id]).'" data-booking-id="' . $row->id . '" class="btn btn-info btn-circle "
                     data-toggle="tooltip" data-original-title="'.__('app.view').'"><i class="fa fa-eye" aria-hidden="true"></i></a> ';
 
+                    $action .= ' <a href="'.route('admin.bookings.show', [$row->id]).'" data-booking-id="' . $row->id . '" class="btn btn-info btn-circle "
+                    data-toggle="tooltip" data-original-title="'.__('app.view').'"><i class="fa fa-eye" aria-hidden="true"></i></a> ';
+
                     if ($this->user->roles()->withoutGlobalScopes()->latest()->first()->hasPermission('delete_booking')) {
                         $action .= ' <a href="javascript:;" class="btn btn-danger btn-circle delete-row"
                           data-toggle="tooltip" data-row-id="' . $row->id . '" data-original-title="'.__('app.delete').'"><i class="fa fa-times" aria-hidden="true"></i></a>';
