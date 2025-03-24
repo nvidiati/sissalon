@@ -1084,13 +1084,13 @@
                 buttons: ["@lang('app.cancel')", "@lang('app.ok')"],
                 dangerMode: true,
                 title: "@lang('errors.areYouSure')",
-                text: "Texto para comprobar",
-               // text: "@lang('errors.deleteWarning')",
+                text: "@lang('errors.deleteWarning')",
             }).then((willDelete) => {
                 if (willDelete) {
                     $("input[name='cart_prices[]']").each(function( index ) {
-                        $(this).closest('tr').remove();
                         $(this).closest('tr').next('tr').remove(); //Haciendo pruebas con esto
+                        $(this).closest('tr').remove();
+                        
                     });
                     calculateTotal();
                     if ($("#cart-table tbody tr").length == 0) {
