@@ -1089,7 +1089,7 @@
                 if (willDelete) {
                     $("input[name='cart_prices[]']").each(function( index ) {
                         $(this).closest('tr').remove();
-                        $('.employee-row').remove(); //Haciendo pruebas con esto
+                        $(this).closest('tr').next('tr').remove(); //Haciendo pruebas con esto
                     });
                     calculateTotal();
                     if ($("#cart-table tbody tr").length == 0) {
