@@ -351,6 +351,21 @@
                 });
             });
 
+            $(document).on('click', '.print-reservation', function () {
+                $('.no-print').hide(); // Oculta elementos antes de imprimir
+                
+                let reservationId = $(this).data('id');
+                let printUrl = `/public/account/bookings/${reservationId}`;
+
+                let printWindow = window.open(printUrl, '_blank');
+
+                printWindow.onload = function () {
+                    printWindow.print();
+                    $('.no-print').show(); // Vuelve a mostrar los elementos después de imprimir
+                };
+            });
+ 
+
             $('body').on('click', '.add-payment', function() {
                 let total = $('#total-amount').html();
                 var totalRemaining = $('#total-remaining').html();

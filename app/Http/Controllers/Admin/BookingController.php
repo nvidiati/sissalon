@@ -224,8 +224,8 @@ class BookingController extends AdminBaseController
                     }
 
                     //crisobal
-                    $action .= ' <a href="'.route('admin.bookings.show', [$row->id]).'" data-id="'. $row->id .'" class="print-reservation btn btn-info btn-circle "
-                    data-toggle="tooltip" data-original-title="Imprimir"><i class="fa fa-btn-warning" aria-hidden="true"></i></a> ';
+                    $action .= ' <a href="'.route('admin.bookings.show', [$row->id]).'" data-id="'. $row->id .'" class="print-reservation btn btn-warning btn-circle "
+                    data-toggle="tooltip" data-original-title="Imprimir"><i class="fa fa-btn-print" aria-hidden="true"></i></a> ';
 
                     $action .= ' <a href="'.route('admin.bookings.show', [$row->id]).'" data-booking-id="' . $row->id . '" class="btn btn-info btn-circle "
                     data-toggle="tooltip" data-original-title="'.__('app.view').'"><i class="fa fa-eye" aria-hidden="true"></i></a> ';
