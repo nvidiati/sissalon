@@ -12,13 +12,13 @@
 <div class="row">
     <div class="col-md-12">
         <div class="card card-dark">
-            <div class="card-header">
+            <div class="card-header no-print">
                 <h3 class="card-title">@lang('app.bookingDetail')</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-12 text-right mt-2 mb-2">
+                    <div class="col-md-12 text-right mt-2 mb-2 no-print">
                         @if ($user->roles()->withoutGlobalScopes()->latest()->first()->hasPermission('update_booking') && $user->roles()->withoutGlobalScopes()->first()->name != 'customer' && $current_emp_role->name != 'customer' && $booking->status !== 'completed')
                         <a href="{{ route('admin.bookings.edit', $booking->id) }}" class="btn btn-sm btn-outline-primary edit-booking" data-booking-id="{{ $booking->id }}" type="button"><i class="fa fa-edit"></i> @lang('app.edit')</a>
                         @endif

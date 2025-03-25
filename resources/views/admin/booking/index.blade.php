@@ -351,7 +351,7 @@
                 });
             });
 
-            $(document).on('click', '.print-reservation', function () {
+            $('body').on('click', '.print-reservation', function () {
                 $('.no-print').hide(); // Oculta elementos antes de imprimir
                 
                 let reservationId = $(this).data('id');
