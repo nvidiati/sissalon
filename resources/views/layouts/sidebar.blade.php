@@ -229,7 +229,6 @@
             @endif
 
             @if ((Auth::user()->is_admin || Auth::user()->is_employee) && !\Session::get('loginRole') && ($current_emp_role->name == 'employee' || $current_emp_role->name == 'administrator'))
-           <!-- CRISTOBAL CAMBIOS
             <li class="nav-item">
                 <a href="{{ route('admin.todo-items.index') }}" class="nav-link {{ request()->is('account/todo-items*') ? 'active' : '' }}">
                     <i class="nav-icon icon-notepad"></i>
@@ -238,7 +237,6 @@
                     </p>
                 </a>
             </li>
-            -->
             @endif
 
             @if(in_array('Employee Leave',Auth::user()->modules) && Auth::user()->is_employee)
