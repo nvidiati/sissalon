@@ -229,6 +229,7 @@
             @endif
 
             @if ((Auth::user()->is_admin || Auth::user()->is_employee) && !\Session::get('loginRole') && ($current_emp_role->name == 'employee' || $current_emp_role->name == 'administrator'))
+           <!-- CRISTOBAL CAMBIOS
             <li class="nav-item">
                 <a href="{{ route('admin.todo-items.index') }}" class="nav-link {{ request()->is('account/todo-items*') ? 'active' : '' }}">
                     <i class="nav-icon icon-notepad"></i>
@@ -237,6 +238,7 @@
                     </p>
                 </a>
             </li>
+            -->
             @endif
 
             @if(in_array('Employee Leave',Auth::user()->modules) && Auth::user()->is_employee)
@@ -266,6 +268,7 @@
         @endif
 
         @if (Auth::user()->is_admin && !\Session::get('loginRole') && $current_emp_role->name == 'administrator')
+        <!-- CRISTOBAL CAMBIOS
             <li class="nav-item">
                 <a href="{{ route('admin.billing.index') }}" class="nav-link {{ request()->is('account/billing*') ? 'active' : '' }}">
                     <i class="nav-icon icon-credit-card" id="billing-i" aria-hidden="true"></i>
@@ -277,10 +280,12 @@
                     <i class="nav-icon icon-printer"></i><p>@lang('app.booking')<br />@lang('app.commission')</p>
                 </a>
             </li>
+        -->
         @endif
 
         
         @if (Auth::user()->roles()->withoutGlobalScopes()->latest()->first()->hasPermission(['read_ticket','create_ticket', 'update_ticket', 'delete_ticket']) && !\Session::get('loginRole'))
+        <!-- CRISTOBAL CAMBIOS
         <li class="nav-item">
             <a href="{{ Auth::user()->is_superadmin_employee ? route('superadmin.tickets.index') : route('admin.tickets.index') }}" class="nav-link {{ (request()->is('super-admin/ticket*') || request()->is('account/ticket*')) ? 'active' : '' }}">
                 <i class="nav-icon fa fa-life-ring"></i>
@@ -289,6 +294,7 @@
                 </p>
             </a>
         </li>
+        -->
         @endif
 
         <li class="nav-item">
