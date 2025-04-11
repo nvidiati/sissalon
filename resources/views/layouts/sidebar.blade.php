@@ -124,7 +124,7 @@
                     </p>
                 </a>
             </li>
-            -->
+            --->
             @if (Auth::user()->hasRole('superadmin'))
                 <li class="nav-item">
                     <a href="{{ route('superadmin.reports.index') }}" class="nav-link {{ request()->is('super-admin/reports*') ? 'active' : '' }}">
