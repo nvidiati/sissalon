@@ -53,7 +53,7 @@
                             </label>
                             <!-- CRISTOBAL -->
                             <!-- <a href="{{ route('password.request') }}">@lang('app.forgotPassword')</a> -->
-                            <a href="{{ route('password.request') }}">Olvide mi contraseña</a> 
+                            <a href="{{ route('password.request') }}">Olvide mi contraseña.</a> 
                         </div>
 
                         @if ($googleCaptchaSettings->login_page == 'active' && $googleCaptchaSettings->status == 'active')
