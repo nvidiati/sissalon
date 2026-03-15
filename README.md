@@ -1,7 +1,5 @@
 # 💇‍♂️ SisSalon - Sistema de Gestión para Salones
 
-# 💇‍♂️ SisSalon - Sistema de Gestión Integral para Salones de Belleza
-
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-00000f?style=for-the-badge&logo=mysql&logoColor=white)
